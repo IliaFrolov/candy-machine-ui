@@ -93,10 +93,12 @@ const Home = (props: HomeProps) => {
       }
 
       const connection = new Connection(props.rpcHost, commitment);
+      console.log("rpcHost: ", props.rpcHost);
+
 
       if (props.candyMachineId) {
         try {
-          console.log("Candy machine id: ", props.candyMachineId);
+          console.log("Candy machine id: ", props.candyMachineId?.toString?.());
 
           const cndy = await getCandyMachineState(
             anchorWallet as anchor.Wallet,

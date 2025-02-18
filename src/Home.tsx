@@ -96,6 +96,8 @@ const Home = (props: HomeProps) => {
 
       if (props.candyMachineId) {
         try {
+          console.log("Candy machine id: ", props.candyMachineId);
+
           const cndy = await getCandyMachineState(
             anchorWallet as anchor.Wallet,
             props.candyMachineId,

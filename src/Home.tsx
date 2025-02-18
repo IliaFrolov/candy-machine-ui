@@ -464,6 +464,7 @@ const Home = (props: HomeProps) => {
       }, 20000);
     })();
   }, [refreshCandyMachineState]);
+console.log({ isActive,isPresale,isWhitelistUser,isValidBalance});
 
   return (
     <Container style={{ marginTop: 100 }}>
